@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/main">
+
+
+    <fragment
+        android:id="@+id/favorite"
+        android:name="com.example.qualificationmarrigeproject.favorite"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.qualificationmarrigeproject.main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/notes"
+        android:name="com.example.qualificationmarrigeproject.notes"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" />
+</navigation>

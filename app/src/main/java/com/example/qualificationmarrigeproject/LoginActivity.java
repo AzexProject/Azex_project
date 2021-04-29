@@ -2,7 +2,9 @@ package com.example.qualificationmarrigeproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -20,5 +22,12 @@ public class LoginActivity extends AppCompatActivity {
 
         tv2=findViewById(R.id.tv_signup);
         bt=findViewById(R.id.bt_signin);
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
