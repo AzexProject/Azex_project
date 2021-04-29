@@ -3,6 +3,7 @@ package com.example.qualificationmarrigeproject;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -32,7 +33,9 @@ BottomNavigationView bottomNavigationView;
                         sele=new notes();
                         break;
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment,sele).commit();
+                FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.fragment,sele);
+                ft.commit();
 
             }
         };
