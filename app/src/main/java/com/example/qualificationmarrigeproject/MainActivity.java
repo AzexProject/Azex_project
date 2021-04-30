@@ -24,13 +24,13 @@ BottomNavigationView bottomNavigationView;
                 Fragment sele=null;
                 switch (menuItem.getItemId()){
                     case R.id.main:
-                        sele=new main();
+                        sele=new main_fragment();
                         break;
                     case R.id.favorite:
-                        sele=new favorite();
+                        sele=new favorite_fragment();
                         break;
-                    case R.id.notes:
-                        sele=new notes();
+                    case R.id.books:
+                        sele=new Books_fragment();
                         break;
                 }
                 FragmentTransaction ft=getSupportFragmentManager().beginTransaction();

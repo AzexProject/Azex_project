@@ -10,10 +10,10 @@ import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link favorite#newInstance} factory method to
+ * Use the {@link favorite_fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class favorite extends Fragment {
+public class favorite_fragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -23,7 +23,7 @@ public class favorite extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public favorite() {
+    public favorite_fragment() {
         // Required empty public constructor
     }
 
@@ -36,8 +36,8 @@ public class favorite extends Fragment {
      * @return A new instance of fragment favorite.
      */
     // TODO: Rename and change types and number of parameters
-    public static favorite newInstance(String param1, String param2) {
-        favorite fragment = new favorite();
+    public static favorite_fragment newInstance(String param1, String param2) {
+        favorite_fragment fragment = new favorite_fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

@@ -8,17 +8,17 @@
 
     <fragment
         android:id="@+id/favorite"
-        android:name="com.example.qualificationmarrigeproject.favorite"
+        android:name="com.example.qualificationmarrigeproject.favorite_fragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
         android:id="@+id/main"
-        android:name="com.example.qualificationmarrigeproject.main"
+        android:name="com.example.qualificationmarrigeproject.main_fragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
     <fragment
-        android:id="@+id/notes"
-        android:name="com.example.qualificationmarrigeproject.notes"
+        android:id="@+id/books"
+        android:name="com.example.qualificationmarrigeproject.Books_fragment"
         android:label="fragment_notes"
-        tools:layout="@layout/fragment_notes" />
+        tools:layout="@layout/fragment_books" />
 </navigation>
