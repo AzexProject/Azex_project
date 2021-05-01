@@ -1,4 +1,4 @@
-package com.example.qualificationmarrigeproject;
+package com.example.qualificationmarrigeproject.recycler;
 
 public class CardModel {
     int card_image;

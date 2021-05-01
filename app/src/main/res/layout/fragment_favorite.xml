@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".favorite_fragment"
+    tools:context=".fragmentcards.contentOfFavoriteFragment.favorite_fragment"
     android:orientation="vertical"
     android:background="@color/colorPrimary">
-    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/youtube_player_view"
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:videoId="7YB9WIkPPK4"
-        app:autoPlay="false"
-        app:showFullScreenButton="true"
-        app:showVideoDuration="true"/>
+        app:tabIndicator="@android:color/white"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabRippleColor="@color/colorPrimaryDark"
+        android:background="#00574B">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

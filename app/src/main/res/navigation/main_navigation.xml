@@ -3,22 +3,70 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/main">
+    app:startDestination="@id/main"
+   >
 
 
-    <fragment
-        android:id="@+id/favorite"
-        android:name="com.example.qualificationmarrigeproject.favorite_fragment"
-        android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+<!--    <fragment-->
+<!--        android:id="@+id/favorite"-->
+<!--        android:name="com.example.qualificationmarrigeproject.fragmentcards.contentOfFavoriteFragment.favorite_fragment"-->
+<!--        android:label="fragment_favorite"-->
+<!--        tools:layout="@layout/fragment_favorite" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_favorite_to_main"-->
+<!--            app:destination="@id/main" />-->
+<!--    </fragment>-->
+
     <fragment
         android:id="@+id/main"
-        android:name="com.example.qualificationmarrigeproject.main_fragment"
+        android:name="com.example.qualificationmarrigeproject.states_fragment.main_fragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_main_to_books"
+            app:destination="@id/books" />
+<!--        <action-->
+<!--            android:id="@+id/action_main_to_favorite"-->
+<!--            app:destination="@id/favorite" />-->
+        <action
+            android:id="@+id/action_main_to_childCare"
+            app:destination="@id/childCare" />
+        <action
+            android:id="@+id/action_main_to_engagementState"
+            app:destination="@id/engagementState" />
+        <action
+            android:id="@+id/action_main_to_marriageState"
+            app:destination="@id/marriageState" />
+    </fragment>
+
+
+
     <fragment
         android:id="@+id/books"
-        android:name="com.example.qualificationmarrigeproject.Books_fragment"
-        android:label="fragment_notes"
-        tools:layout="@layout/fragment_books" />
+        android:name="com.example.qualificationmarrigeproject.states_fragment.Books_fragment"
+        android:label="fragment_books"
+        tools:layout="@layout/fragment_books" >
+        <action
+            android:id="@+id/action_books_to_main"
+            app:destination="@id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/childCare"
+        android:name="com.example.qualificationmarrigeproject.states_fragment.ChidCare"
+        android:label="fragment_child_care"
+        tools:layout="@layout/fragment_child_care" />
+    <fragment
+        android:id="@+id/engagementState"
+        android:name="com.example.qualificationmarrigeproject.states_fragment.EngagementState"
+        android:label="fragment_engagement"
+        tools:layout="@layout/fragment_engagement" />
+
+
+    <fragment
+        android:id="@+id/marriageState"
+        android:name="com.example.qualificationmarrigeproject.states_fragment.MarriageState"
+        android:label="fragment_marriage_state"
+        tools:layout="@layout/fragment_marriage_state" />
+
 </navigation>
