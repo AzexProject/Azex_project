@@ -9,7 +9,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     >
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         app:defaultNavHost="true"
         android:id="@+id/fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"

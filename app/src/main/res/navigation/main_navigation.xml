@@ -23,24 +23,25 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main">
 
-        <action
-            android:id="@+id/action_main_to_books"
-            app:destination="@id/books" />
-<!--        <action-->
-<!--            android:id="@+id/action_main_to_favorite"-->
-<!--            app:destination="@id/favorite" />-->
-        <action
-            android:id="@+id/action_main_to_childCare"
-            app:destination="@id/childCare" />
-        <action
-            android:id="@+id/action_main_to_engagementState"
-            app:destination="@id/engagementState" />
-        <action
-            android:id="@+id/action_main_to_marriageState"
-            app:destination="@id/marriageState" />
+
     </fragment>
 
 
+    <action
+        android:id="@+id/action_main_to_books"
+        app:destination="@id/books" />
+    <!--        <action-->
+    <!--            android:id="@+id/action_main_to_favorite"-->
+    <!--            app:destination="@id/favorite" />-->
+    <action
+        android:id="@+id/action_main_to_childCare"
+        app:destination="@id/childCare" />
+    <action
+        android:id="@+id/action_main_to_engagementState"
+        app:destination="@id/engagementState" />
+    <action
+        android:id="@+id/action_main_to_marriageState"
+        app:destination="@id/marriageState" />
 
     <fragment
         android:id="@+id/books"

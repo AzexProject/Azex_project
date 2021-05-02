@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
-
+ * <p>
  * create an instance of this fragment.
  */
 public class main_fragment extends Fragment {
@@ -37,38 +37,42 @@ public class main_fragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v= inflater.from(getContext()).inflate(R.layout.fragment_main, null);
+        View v = inflater.from(getContext()).inflate(R.layout.fragment_main, null);
         RecyclerView homeRecycler;
         homeRecycler = v.findViewById(R.id.home_recycler);
-         ArrayList<CardModel> arrayList = new ArrayList<>();
+        ArrayList<CardModel> arrayList = new ArrayList<>();
         arrayList.add(new CardModel(R.drawable.engagment, "الخطوبه"));
         arrayList.add(new CardModel(R.drawable.marriage, "الزواج"));
         arrayList.add(new CardModel(R.drawable.child3, "التربية"));
-     Homeadapter homeadapter = new Homeadapter(arrayList, new RecyclerListener() {
+        Homeadapter homeadapter = new Homeadapter(arrayList, new RecyclerListener() {
 
             @Override
             public void listener(int position) {
 //                NavHostFragment.findNavController(main_fragment.this).navigate(R.id.action_main_to_engagementState);
 //                Toast.makeText(getContext(),"NotFound",Toast.LENGTH_LONG).show();
-                NavController navController=NavHostFragment.findNavController(main_fragment.this);
-             if(navController!=null){
+                NavController navController = NavHostFragment.findNavController(main_fragment.this);
+                if (navController != null) {
 
-                switch (position) {
-                    case 0:{
-                     navController.navigate(R.id.action_main_to_engagementState);
+                    switch (position) {
+                        case 0: {
+                            navController.navigate(R.id.action_main_to_engagementState);
 
-                        break;}
-                    case 1:{
-                   navController.navigate(R.id.action_main_to_marriageState);
+                            break;
+                        }
+                        case 1: {
+                            navController.navigate(R.id.action_main_to_marriageState);
 
-                        break;}
-                    case 2:{
-                       navController.navigate(R.id.action_main_to_childCare);
+                            break;
+                        }
+                        case 2: {
+                            navController.navigate(R.id.action_main_to_childCare);
 
-                        break;}
-                    default:
-                        Toast.makeText(getContext(),"NotFound",Toast.LENGTH_LONG).show();
-                }}
+                            break;
+                        }
+                        default:
+                            Toast.makeText(getContext(), "NotFound", Toast.LENGTH_LONG).show();
+                    }
+                }
 
 
             }
@@ -79,12 +83,9 @@ public class main_fragment extends Fragment {
     }
 
 
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-
 
 
     }
