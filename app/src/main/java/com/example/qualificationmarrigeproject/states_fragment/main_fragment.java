@@ -50,19 +50,20 @@ public class main_fragment extends Fragment {
             public void listener(int position) {
 //                NavHostFragment.findNavController(main_fragment.this).navigate(R.id.action_main_to_engagementState);
 //                Toast.makeText(getContext(),"NotFound",Toast.LENGTH_LONG).show();
-
+                NavController navController=NavHostFragment.findNavController(main_fragment.this);
+             if(navController!=null){
 
                 switch (position) {
                     case 0:{
-                        NavHostFragment.findNavController(main_fragment.this)  .navigate(R.id.action_main_to_engagementState);
+                     navController.navigate(R.id.action_main_to_engagementState);
 
                         break;}
                     case 1:{
-                        NavHostFragment.findNavController(main_fragment.this).navigate(R.id.action_main_to_marriageState);
+                   navController.navigate(R.id.action_main_to_marriageState);
 
                         break;}
                     case 2:{
-                        NavHostFragment.findNavController(main_fragment.this). navigate(R.id.action_main_to_childCare);
+                       navController.navigate(R.id.action_main_to_childCare);
 
                         break;}
                     default:
@@ -70,7 +71,7 @@ public class main_fragment extends Fragment {
                 }}
 
 
-
+            }
         });
         homeRecycler.setAdapter(homeadapter);
         homeRecycler.setLayoutManager(new LinearLayoutManager(getContext()));

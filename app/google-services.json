@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "222925103718",
+    "project_id": "login-1bfef",
+    "storage_bucket": "login-1bfef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222925103718:android:279fdbfbf069a8c8c483a7",
+        "android_client_info": {
+          "package_name": "com.example.qualificationmarrigeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222925103718-c38q0kiquchanb7icpv7gr4k2aq342v4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJSGXqa5IHYML_bGvfvZHFbRz6Ul020MM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222925103718-c38q0kiquchanb7icpv7gr4k2aq342v4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
