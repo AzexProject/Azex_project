@@ -26,9 +26,9 @@
         <action
             android:id="@+id/action_main_to_books"
             app:destination="@id/books" />
-<!--        <action-->
-<!--            android:id="@+id/action_main_to_favorite"-->
-<!--            app:destination="@id/favorite" />-->
+        <action
+            android:id="@+id/action_main_to_favorite"
+            app:destination="@id/favorite" />
         <action
             android:id="@+id/action_main_to_childCare"
             app:destination="@id/childCare" />
