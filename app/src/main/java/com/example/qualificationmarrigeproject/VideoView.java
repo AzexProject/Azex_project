@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.qualificationmarrigeproject.R;
+
 public class VideoView extends AppCompatActivity {
 ImageButton imageButton;
 Button saveNotes;

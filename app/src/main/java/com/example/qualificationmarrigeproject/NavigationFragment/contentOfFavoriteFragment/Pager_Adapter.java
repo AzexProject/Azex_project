@@ -1,4 +1,4 @@
-package com.example.qualificationmarrigeproject.fragmentcards.contentOfFavoriteFragment;
+package com.example.qualificationmarrigeproject.NavigationFragment.contentOfFavoriteFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

@@ -1,4 +1,4 @@
-package com.example.qualificationmarrigeproject.fragmentcards.contentOfFavoriteFragment;
+package com.example.qualificationmarrigeproject.NavigationFragment.contentOfFavoriteFragment;
 
 import android.os.Bundle;
 

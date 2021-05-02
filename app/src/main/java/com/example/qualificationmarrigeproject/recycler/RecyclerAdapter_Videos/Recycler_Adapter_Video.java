@@ -1,4 +1,4 @@
-package com.example.qualificationmarrigeproject.RecyclerAdapter_Videos;
+package com.example.qualificationmarrigeproject.recycler.RecyclerAdapter_Videos;
 
 import android.view.LayoutInflater;
 import android.view.View;

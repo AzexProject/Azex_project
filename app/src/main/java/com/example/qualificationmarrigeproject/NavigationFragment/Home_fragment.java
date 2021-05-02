@@ -1,4 +1,4 @@
-package com.example.qualificationmarrigeproject.states_fragment;
+package com.example.qualificationmarrigeproject.NavigationFragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -27,17 +27,17 @@ import java.util.ArrayList;
 
  * create an instance of this fragment.
  */
-public class main_fragment extends Fragment {
+public class Home_fragment extends Fragment {
 
 
-    public main_fragment() {
+    public Home_fragment() {
         // Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v= inflater.from(getContext()).inflate(R.layout.fragment_main, null);
+        View v= inflater.from(getContext()).inflate(R.layout.fragment_home, null);
         RecyclerView homeRecycler;
         homeRecycler = v.findViewById(R.id.home_recycler);
          ArrayList<CardModel> arrayList = new ArrayList<>();
@@ -50,7 +50,7 @@ public class main_fragment extends Fragment {
             public void listener(int position) {
 //                NavHostFragment.findNavController(main_fragment.this).navigate(R.id.action_main_to_engagementState);
 //                Toast.makeText(getContext(),"NotFound",Toast.LENGTH_LONG).show();
-                NavController navController=NavHostFragment.findNavController(main_fragment.this);
+                NavController navController=NavHostFragment.findNavController(Home_fragment.this);
              if(navController!=null){
 
                 switch (position) {
