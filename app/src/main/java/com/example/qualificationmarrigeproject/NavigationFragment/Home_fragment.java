@@ -1,4 +1,4 @@
-package com.example.qualificationmarrigeproject.states_fragment;
+package com.example.qualificationmarrigeproject.NavigationFragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -27,10 +27,10 @@ import java.util.ArrayList;
  * <p>
  * create an instance of this fragment.
  */
-public class main_fragment extends Fragment {
+public class Home_fragment extends Fragment {
 
 
-    public main_fragment() {
+    public Home_fragment() {
         // Required empty public constructor
     }
 
@@ -50,8 +50,8 @@ public class main_fragment extends Fragment {
             public void listener(int position) {
 //                NavHostFragment.findNavController(main_fragment.this).navigate(R.id.action_main_to_engagementState);
 //                Toast.makeText(getContext(),"NotFound",Toast.LENGTH_LONG).show();
-                NavController navController = NavHostFragment.findNavController(main_fragment.this);
-                if (navController != null) {
+                NavController navController=NavHostFragment.findNavController(Home_fragment.this);
+             if(navController!=null){
 
                     switch (position) {
                         case 0: {

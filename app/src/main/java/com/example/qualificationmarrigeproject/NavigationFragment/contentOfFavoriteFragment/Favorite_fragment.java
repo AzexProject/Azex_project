@@ -1,4 +1,4 @@
-package com.example.qualificationmarrigeproject.fragmentcards.contentOfFavoriteFragment;
+package com.example.qualificationmarrigeproject.NavigationFragment.contentOfFavoriteFragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,7 +17,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 
 
-public class favorite_fragment extends Fragment {
+public class Favorite_fragment extends Fragment {
 
     TabLayout tabLayout ;
     ViewPager viewPager ;
@@ -26,7 +26,7 @@ public class favorite_fragment extends Fragment {
    Favourite_Books_Fragment favourite_books ;
     Favourite__Videos_Fragment favourite_videos;
 
-    public favorite_fragment() {
+    public Favorite_fragment() {
         // Required empty public constructor
     }
 

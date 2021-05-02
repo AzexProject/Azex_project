@@ -1,7 +1,5 @@
 package com.example.qualificationmarrigeproject.recycler;
 
-import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,13 +7,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.qualificationmarrigeproject.R;
-import com.example.qualificationmarrigeproject.states_fragment.EngagementState;
-import com.example.qualificationmarrigeproject.states_fragment.ChidCare;
-import com.example.qualificationmarrigeproject.states_fragment.MarriageState;
+
 import java.util.ArrayList;
 public class Homeadapter extends RecyclerView.Adapter <Homeadapter.HomeViewHolder> {
     ArrayList<CardModel> arrayList;

@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragmentcards.contentOfFavoriteFragment.favorite_fragment"
+    tools:context=".NavigationFragment.contentOfFavoriteFragment.Favorite_fragment"
     android:orientation="vertical"
-    android:background="@color/colorPrimary">
+    android:background="#FFFFFF">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout_main"
